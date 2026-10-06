@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique | Charles-Édouard - BTS SIO SISR</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="pirate-flag">☠️</span>
+            <span class="logo-text">Charles-Édouard</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="veille.html" class="active">Veille</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="header-content">
+            <h1>📰 Ma Veille Technologique</h1>
+            <p>Reste à jour avec les dernières découvertes de l'équipage</p>
+        </div>
+        <div class="newspaper-float">
+            <span class="news-icon">📰</span>
+        </div>
+    </header>
+
+    <!-- Section Veille -->
+    <section class="veille section">
+        <div class="container">
+            <!-- Filtres -->
+            <div class="veille-filters">
+                <button class="filter-btn active" data-filter="all">Toutes</button>
+                <button class="filter-btn" data-filter="securite">🔒 Sécurité</button>
+                <button class="filter-btn" data-filter="reseau">🌐 Réseau</button>
+                <button class="filter-btn" data-filter="cloud">☁️ Cloud</button>
+                <button class="filter-btn" data-filter="sysadmin">🖥️ SysAdmin</button>
+            </div>
+
+            <!-- Articles de veille -->
+            <div class="veille-grid">
+                <!-- Article 1 -->
+                <article class="veille-card">
+                    <div class="card-header">
+                        <span class="category-badge securite">🔒 Sécurité</span>
+                        <span class="date">6 Octobre 2026</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Zero Trust : La nouvelle approche de sécurité</h3>
+                        <p class="excerpt">
+                            Le modèle Zero Trust révolutionne la sécurité informatique en ne faisant confiance 
+                            à aucune entité par défaut, même à l'intérieur du réseau...
+                        </p>
+                        <div class="source-info">
+                            <span class="source">📚 Source : ANSSI</span>
+                            <a href="#" class="read-more">Lire l'article →</a>
+                        </div>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">#ZeroTrust</span>
+                        <span class="tag">#Cybersécurité</span>
+                        <span class="tag">#RSSI</span>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="veille-card">
+                    <div class="card-header">
+                        <span class="category-badge reseau">🌐 Réseau</span>
+                        <span class="date">3 Octobre 2026</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Wi-Fi 7 : Débits multi-gigabits en approche</h3>
+                        <p class="excerpt">
+                            La norme 802.11be (Wi-Fi 7) promet des débits théoriques jusqu'à 46 Gbps, 
+                            ouvrant la voie à de nouveaux usages professionnels...
+                        </p>
+                        <div class="source-info">
+                            <span class="source">📚 Source : Cisco Blog</span>
+                            <a href="#" class="read-more">Lire l'article →</a>
+                        </div>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">#WiFi7</span>
+                        <span class="tag">#802.11be</span>
+                        <span class="tag">#SansFil</span>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="veille-card">
+                    <div class="card-header">
+                        <span class="category-badge cloud">☁️ Cloud</span>
+                        <span class="date">1 Octobre 2026</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Kubernetes 1.28 : Nouvelles fonctionnalités</h3>
+                        <p class="excerpt">
+                            La dernière version de Kubernetes apporte des améliorations significatives 
+                            en matière de sécurité, de performance et de gestion des ressources...
+                        </p>
+                        <div class="source-info">
+                            <span class="source">📚 Source : Kubernetes.io</span>
+                            <a href="#" class="read-more">Lire l'article →</a>
+                        </div>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">#Kubernetes</span>
+                        <span class="tag">#Container</span>
+                        <span class="tag">#Orchestration</span>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="veille-card">
+                    <div class="card-header">
+                        <span class="category-badge sysadmin">🖥️ SysAdmin</span>
+                        <span class="date">28 Septembre 2026</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Windows Server 2025 : Preview disponible</h3>
+                        <p class="excerpt">
+                            Microsoft dévoile les premières fonctionnalités de Windows Server 2025, 
+                            avec un accent sur l'hybridation cloud et la sécurité renforcée...
+                        </p>
+                        <div class="source-info">
+                            <span class="source">📚 Source : Microsoft Tech Community</span>
+                            <a href="#" class="read-more">Lire l'article →</a>
+                        </div>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">#WindowsServer</span>
+                        <span class="tag">#Microsoft</span>
+                        <span class="tag">#HybridCloud</span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn next">Suivant →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>🏴‍☠️ Charles-Édouard</h4>
+                    <p>Étudiant BTS SIO SISR</p>
+                    <p>"La conquête continue !"</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="veille.html">Veille</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Me suivre</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">💼</a>
+                        <a href="#" class="social-icon">🐙</a>
+                        <a href="#" class="social-icon">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Charles-Édouard | Fait avec <span class="heart">❤️</span> et ☕</p>
+                <p class="one-piece-quote">"Je serai le roi des administrateurs réseaux !"</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filtrage des articles
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const veilleCards = document.querySelectorAll('.veille-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Retirer la classe active de tous les boutons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Ajouter la classe active au bouton cliqué
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                veilleCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        const category = card.querySelector('.category-badge').classList.contains(filter);
+                        card.style.display = category ? 'block' : 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

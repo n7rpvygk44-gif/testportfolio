@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Charles-Édouard - BTS SIO SISR</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="pirate-flag">☠️</span>
+            <span class="logo-text">Charles-Édouard</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="veille.html">Veille</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="header-content">
+            <h1>📬 Contacte l'Équipage</h1>
+            <p>Une question ? Un projet ? Envoie un message !</p>
+        </div>
+        <div class="message-birds">
+            <span class="bird">🕊️</span>
+            <span class="bird bird2">🦅</span>
+        </div>
+    </header>
+
+    <!-- Section Contact -->
+    <section class="contact section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Informations de contact -->
+                <div class="contact-info">
+                    <h2>🏴‍☠️ Coordonnées</h2>
+                    <p class="info-intro">
+                        Prêt à rejoindre l'aventure ? Voici comment me contacter pour discuter 
+                        de projets, d'opportunités ou simplement échanger sur l'IT !
+                    </p>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <span class="info-icon">📧</span>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>charles.edouard@email.com</p>
+                                <a href="mailto:charles.edouard@email.com" class="contact-link">Envoyer un message</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div class="info-content">
+                                <h4>Localisation</h4>
+                                <p>Nantes, France</p>
+                                <p class="small">Disponible pour alternance</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">📱</span>
+                            <div class="info-content">
+                                <h4>Téléphone</h4>
+                                <p>+33 6 XX XX XX XX</p>
+                                <a href="tel:+336XXXXXXXX" class="contact-link">Appeler</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">🌐</span>
+                            <div class="info-content">
+                                <h4>Réseaux</h4>
+                                <div class="social-contact">
+                                    <a href="#" class="social-btn linkedin">💼 LinkedIn</a>
+                                    <a href="#" class="social-btn github">🐙 GitHub</a>
+                                    <a href="#" class="social-btn twitter">🐦 Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability">
+                        <h4>🕒 Disponibilité</h4>
+                        <p>
+                            <span class="status-dot"></span>
+                            Ouvert aux opportunités d'alternance
+                        </p>
+                        <p class="availability-note">
+                            Recherche active pour septembre 2027
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Formulaire de contact -->
+                <div class="contact-form-container">
+                    <h2>✉️ Envoie un Message</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">
+                                <span class="label-icon">👤</span>
+                                Nom complet
+                            </label>
+                            <input type="text" id="name" name="name" required 
+                                   placeholder="Ton nom de pirate">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <span class="label-icon">📧</span>
+                                Email
+                            </label>
+                            <input type="email" id="email" name="email" required 
+                                   placeholder="ton.email@exemple.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <span class="label-icon">📝</span>
+                                Sujet
+                            </label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Choisis un sujet...</option>
+                                <option value="projet">💼 Proposition de projet</option>
+                                <option value="alternance">🎯 Opportunité d'alternance</option>
+                                <option value="stage">📚 Demande de stage</option>
+                                <option value="collaboration">🤝 Collaboration</option>
+                                <option value="autre">💬 Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <span class="label-icon">💬</span>
+                                Message
+                            </label>
+                            <textarea id="message" name="message" rows="6" required 
+                                      placeholder="Décris ton message ici..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            Envoyer le message <span class="btn-icon">🚀</span>
+                        </button>
+
+                        <p class="form-note">
+                            🔒 Tes informations sont protégées. Je réponds sous 48h.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>🏴‍☠️ Charles-Édouard</h4>
+                    <p>Étudiant BTS SIO SISR</p>
+                    <p>"La conquête continue !"</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="veille.html">Veille</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Me suivre</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">💼</a>
+                        <a href="#" class="social-icon">🐙</a>
+                        <a href="#" class="social-icon">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Charles-Édouard | Fait avec <span class="heart">❤️</span> et ☕</p>
+                <p class="one-piece-quote">"Je serai le roi des administrateurs réseaux !"</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
